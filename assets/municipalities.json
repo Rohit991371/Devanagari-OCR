@@ -1,0 +1,275 @@
+{
+  "काठमाडौं": {
+    "eng": "Kathmandu",
+    "municipalities": [
+      {"dev": "काठमाडौं महानगरपालिका", "eng": "Kathmandu Metropolitan City"},
+      {"dev": "कागेश्वरी मनोहरा", "eng": "Kageshwori Manohara"},
+      {"dev": "गोकर्णेश्वर", "eng": "Gokarneshwor"},
+      {"dev": "चन्द्रागिरी", "eng": "Chandragiri"},
+      {"dev": "टोखा", "eng": "Tokha"},
+      {"dev": "दक्षिणकाली", "eng": "Dakshinkali"},
+      {"dev": "नागार्जुन", "eng": "Nagarjun"},
+      {"dev": "बुढानीलकण्ठ", "eng": "Budhanilkantha"},
+      {"dev": "शङ्खरापुर", "eng": "Shankharapur"},
+      {"dev": "तारकेश्वर", "eng": "Tarakeshwor"},
+      {"dev": "किर्तिपुर", "eng": "Kirtipur"}
+    ]
+  },
+  "ललितपुर": {
+    "eng": "Lalitpur",
+    "municipalities": [
+      {"dev": "ललितपुर महानगरपालिका", "eng": "Lalitpur Metropolitan City"},
+      {"dev": "गोदावरी", "eng": "Godawari"},
+      {"dev": "महालक्ष्मी", "eng": "Mahalaxmi"},
+      {"dev": "कोञ्ज्योसोम", "eng": "Konjyosom"},
+      {"dev": "बागमती", "eng": "Bagmati"},
+      {"dev": "महाबौद्ध", "eng": "Mahaboudha"}
+    ]
+  },
+  "भक्तपुर": {
+    "eng": "Bhaktapur",
+    "municipalities": [
+      {"dev": "भक्तपुर नगरपालिका", "eng": "Bhaktapur Municipality"},
+      {"dev": "मध्यपुर थिमी", "eng": "Madhyapur Thimi"},
+      {"dev": "चाँगुनारायण", "eng": "Changunarayan"},
+      {"dev": "सूर्यविनायक", "eng": "Suryabinayak"}
+    ]
+  },
+  "कास्की": {
+    "eng": "Kaski",
+    "municipalities": [
+      {"dev": "पोखरा लेखनाथ महानगरपालिका", "eng": "Pokhara Lekhnath Metropolitan City"},
+      {"dev": "माछापुच्छ्रे", "eng": "Machhapuchchhre"},
+      {"dev": "मादी", "eng": "Madi"},
+      {"dev": "रूपा", "eng": "Rupa"},
+      {"dev": "अन्नपूर्ण", "eng": "Annapurna"}
+    ]
+  },
+  "चितवन": {
+    "eng": "Chitwan",
+    "municipalities": [
+      {"dev": "भरतपुर महानगरपालिका", "eng": "Bharatpur Metropolitan City"},
+      {"dev": "रत्ननगर", "eng": "Ratnanagar"},
+      {"dev": "खैरहनी", "eng": "Khairahani"},
+      {"dev": "माडी", "eng": "Madi"},
+      {"dev": "राप्ती", "eng": "Rapti"},
+      {"dev": "इच्छाकामना", "eng": "Ichchhakamana"}
+    ]
+  },
+  "धनुषा": {
+    "eng": "Dhanusha",
+    "municipalities": [
+      {"dev": "जनकपुरधाम उपमहानगरपालिका", "eng": "Janakpurdham Sub-Metropolitan City"},
+      {"dev": "क्षिरेश्वरनाथ", "eng": "Chhireshwornath"},
+      {"dev": "गणेशमान चारनाथ", "eng": "Ganeshman Charnath"},
+      {"dev": "धनुषाधाम", "eng": "Dhanushadham"},
+      {"dev": "नगराइन", "eng": "Nagarain"},
+      {"dev": "बटेश्वर", "eng": "Bateshwor"},
+      {"dev": "मिथिला", "eng": "Mithila"},
+      {"dev": "मिथिला बिहारी", "eng": "Mithila Bihari"},
+      {"dev": "मुखियापट्टी मुसहरमिया", "eng": "Mukhiyapatti Musaharmiya"},
+      {"dev": "लक्ष्मीनिया", "eng": "Laxminiya"},
+      {"dev": "विदेह", "eng": "Bideha"},
+      {"dev": "सबैला", "eng": "Sabaila"},
+      {"dev": "हंसपुर", "eng": "Hanspur"},
+      {"dev": "औरही", "eng": "Aurahi"}
+    ]
+  },
+  "रौतहट": {
+    "eng": "Rautahat",
+    "municipalities": [
+      {"dev": "गौर", "eng": "Gaur"},
+      {"dev": "बौधिमाई", "eng": "Baudhimai"},
+      {"dev": "परोहा", "eng": "Paroha"},
+      {"dev": "राजपुर", "eng": "Rajpur"},
+      {"dev": "ब्रह्मपुरी", "eng": "Brammhapuri"},
+      {"dev": "मौलापुर", "eng": "Maulapur"},
+      {"dev": "गढीमाई", "eng": "Gadhimai"},
+      {"dev": "देवाही गोनाही", "eng": "Dewahi Gonahi"},
+      {"dev": "कटहरिया", "eng": "Katahariya"},
+      {"dev": "बिर्तीप्रष्टोका", "eng": "Birtiprastoka"},
+      {"dev": "यमुनामाई", "eng": "Yamunamai"},
+      {"dev": "ईसनाथ", "eng": "Ishanath"},
+      {"dev": "विन्दबासिनी", "eng": "Bindabasini"},
+      {"dev": "प्रसौनी", "eng": "Prasauni"}
+    ]
+  },
+  "पर्सा": {
+    "eng": "Parsa",
+    "municipalities": [
+      {"dev": "वीरगन्ज", "eng": "Birgunj"},
+      {"dev": "बहुदरमाई", "eng": "Bahudarmai"},
+      {"dev": "पर्सागढी", "eng": "Parsagadhi"},
+      {"dev": "पोखरिया", "eng": "Pokhariya"},
+      {"dev": "छिपहरमाई", "eng": "Chhipaharmai"},
+      {"dev": "बिन्दबासिनी", "eng": "Bindbasini"},
+      {"dev": "जगरनाथपुर", "eng": "Jagarnathpur"},
+      {"dev": "ढोलबाहा", "eng": "Dhobilbara"},
+      {"dev": "कालिकामाई", "eng": "Kalikamai"},
+      {"dev": "पटेर्वा सुगौली", "eng": "Paterwa Sugauli"},
+      {"dev": "थोरी", "eng": "Thori"},
+      {"dev": "सखुवाप्रसौनी", "eng": "Sakhuwa Prasauni"}
+    ]
+  },
+  "बारा": {
+    "eng": "Bara",
+    "municipalities": [
+      {"dev": "कलैया", "eng": "Kalaiya"},
+      {"dev": "जीतपुर सिमरा", "eng": "Jeetpur Simara"},
+      {"dev": "कोल्हबी", "eng": "Kolhabi"},
+      {"dev": "निजगढ", "eng": "Nijgadh"},
+      {"dev": "पचरौता", "eng": "Pacharauta"},
+      {"dev": "फेटा", "eng": "Pheta"},
+      {"dev": "आदर्श कोटवाल", "eng": "Adarsha Kotwal"},
+      {"dev": "बारागढी", "eng": "Baragadhi"},
+      {"dev": "महागढीमाई", "eng": "Mahagadhimai"},
+      {"dev": "करैयामाई", "eng": "Karaiyamai"},
+      {"dev": "देवताल", "eng": "Devtal"},
+      {"dev": "हरिवन", "eng": "Hariwon"},
+      {"dev": "विश्रामपुर", "eng": "Bisrampur"},
+      {"dev": "प्रसौनी", "eng": "Prasauni"},
+      {"dev": "सिम्रौनगढ", "eng": "Simraungadh"}
+    ]
+  },
+  "सप्तरी": {
+    "eng": "Saptari",
+    "municipalities": [
+      {"dev": "राजविराज", "eng": "Rajbiraj"},
+      {"dev": "बोदेबरसाइन", "eng": "Bodebarsain"},
+      {"dev": "शम्भुनाथ", "eng": "Shambhunath"},
+      {"dev": "हनुमाननगर कङ्कालिनी", "eng": "Hanumannagar Kankalini"},
+      {"dev": "कञ्चनरुप", "eng": "Kanchanrup"},
+      {"dev": "सुरुङ्गा", "eng": "Surunga"},
+      {"dev": "डाक्नेश्वरी", "eng": "Dakneshwori"},
+      {"dev": "तिरहुत", "eng": "Tirahut"},
+      {"dev": "बिष्णुपुर", "eng": "Bishnupur"},
+      {"dev": "महादेवा", "eng": "Mahadeva"},
+      {"dev": "रुपनी", "eng": "Rupani"},
+      {"dev": "तिलाठी कोइलाडी", "eng": "Tilathi Koiladi"},
+      {"dev": "खडक", "eng": "Khadak"},
+      {"dev": "सप्तकोशी", "eng": "Saptakoshi"},
+      {"dev": "छिन्नमस्ता", "eng": "Chhinnamasta"},
+      {"dev": "अग्निसाइर कृष्णासवरन", "eng": "Agnisaira Krishnasavaran"},
+      {"dev": "बलान-बिहुल", "eng": "Balan-Bihul"}
+    ]
+  },
+  "झापा": {
+    "eng": "Jhapa",
+    "municipalities": [
+      {"dev": "मेची नगरपालिका", "eng": "Mechi Municipality"},
+      {"dev": "भद्रपुर", "eng": "Bhadrapur"},
+      {"dev": "अर्जुनधारा", "eng": "Arjundhara"},
+      {"dev": "शिवशताक्षी", "eng": "Shivasataxi"},
+      {"dev": "कमल", "eng": "Kamal"},
+      {"dev": "गौरादह", "eng": "Gauradaha"},
+      {"dev": "कनकाई", "eng": "Kankai"},
+      {"dev": "बिर्तामोड", "eng": "Birtamod"},
+      {"dev": "दमक", "eng": "Damak"},
+      {"dev": "झापा", "eng": "Jhapa"},
+      {"dev": "हल्दिबारी", "eng": "Haldibari"},
+      {"dev": "बुद्धशान्ति", "eng": "Buddhashanti"},
+      {"dev": "बाराबिसे", "eng": "Barabise"},
+      {"dev": "कचनकवल", "eng": "Kachankawal"}
+    ]
+  },
+  "मोरङ": {
+    "eng": "Morang",
+    "municipalities": [
+      {"dev": "विराटनगर महानगरपालिका", "eng": "Biratnagar Metropolitan City"},
+      {"dev": "उर्लाबारी", "eng": "Urlabari"},
+      {"dev": "रङ्गेली", "eng": "Rangeli"},
+      {"dev": "सुनवर्षी", "eng": "Sunbarshi"},
+      {"dev": "पथरी शनिश्चरे", "eng": "Pathri Shanishchare"},
+      {"dev": "बेलवारी", "eng": "Belwari"},
+      {"dev": "लेटाङ", "eng": "Letang"},
+      {"dev": "मिक्लाजुङ", "eng": "Miklajung"},
+      {"dev": "कटहरी", "eng": "Katahari"},
+      {"dev": "जहदा", "eng": "Jahada"},
+      {"dev": "बुढीगंगा", "eng": "Budhiganga"},
+      {"dev": "रतुवामाई", "eng": "Ratuwamai"},
+      {"dev": "ग्रामथान", "eng": "Gramthan"},
+      {"dev": "धनपालथान", "eng": "Dhanpalthan"}
+    ]
+  },
+  "सुनसरी": {
+    "eng": "Sunsari",
+    "municipalities": [
+      {"dev": "इटहरी उपमहानगरपालिका", "eng": "Itahari Sub-Metropolitan City"},
+      {"dev": "धरान उपमहानगरपालिका", "eng": "Dharan Sub-Metropolitan City"},
+      {"dev": "इनरुवा", "eng": "Inaruwa"},
+      {"dev": "बराह", "eng": "Barah"},
+      {"dev": "दुहबी", "eng": "Duhabi"},
+      {"dev": "हरिनगर", "eng": "Harinagara"},
+      {"dev": "कोशी", "eng": "Koshi"},
+      {"dev": "भोक्राहा नरसिंह", "eng": "Bhokraha Narsingh"},
+      {"dev": "देवानगञ्ज", "eng": "Dewanganj"},
+      {"dev": "गढी", "eng": "Gadhi"},
+      {"dev": "छिन्ताङ", "eng": "Chhintang"},
+      {"dev": "सापटी", "eng": "Sapahi"}
+    ]
+  },
+  "रुपन्देही": {
+    "eng": "Rupandehi",
+    "municipalities": [
+      {"dev": "बुटवल उपमहानगरपालिका", "eng": "Butwal Sub-Metropolitan City"},
+      {"dev": "सिद्धार्थनगर", "eng": "Siddharthanagar"},
+      {"dev": "देवदह", "eng": "Devdaha"},
+      {"dev": "सैनामैना", "eng": "Sainamaina"},
+      {"dev": "लुम्बिनी सांस्कृतिक", "eng": "Lumbini Sanskritik"},
+      {"dev": "मर्चवारी", "eng": "Marchawari"},
+      {"dev": "ओमसतिया", "eng": "Omsatiya"},
+      {"dev": "रोहिणी", "eng": "Rohini"},
+      {"dev": "शुद्धोधन", "eng": "Shuddhodhan"},
+      {"dev": "तिलोत्तमा", "eng": "Tilottama"},
+      {"dev": "मयादेवी", "eng": "Mayadevi"},
+      {"dev": "गैडहवा", "eng": "Gaidahawa"},
+      {"dev": "कञ्चन", "eng": "Kanchan"},
+      {"dev": "सम्मरीमाई", "eng": "Sammarimai"},
+      {"dev": "बाँसगढी", "eng": "Bangsgadhi"},
+      {"dev": "मर्चवारी", "eng": "Marchawari"}
+    ]
+  },
+  "दाङ": {
+    "eng": "Dang",
+    "municipalities": [
+      {"dev": "घोराही उपमहानगरपालिका", "eng": "Ghorahi Sub-Metropolitan City"},
+      {"dev": "तुलसीपुर उपमहानगरपालिका", "eng": "Tulsipur Sub-Metropolitan City"},
+      {"dev": "लमही", "eng": "Lamahi"},
+      {"dev": "शान्तिनगर", "eng": "Shantinagar"},
+      {"dev": "बंगलाचुली", "eng": "Banglachuli"},
+      {"dev": "राजपुर", "eng": "Rajpur"},
+      {"dev": "गढवा", "eng": "Gadhawa"},
+      {"dev": "बबई", "eng": "Babai"},
+      {"dev": "दंगीशरण", "eng": "Dangisharan"},
+      {"dev": "पुरुषोत्तमपुर", "eng": "Purushottampur"},
+      {"dev": "रिउ", "eng": "Riu"},
+      {"dev": "कालागाउँ निगलासैनी", "eng": "Kalagaun Nigalasaini"}
+    ]
+  },
+  "सुर्खेत": {
+    "eng": "Surkhet",
+    "municipalities": [
+      {"dev": "वीरेन्द्रनगर", "eng": "Birendranagar"},
+      {"dev": "भेरीगंगा", "eng": "Bheriganga"},
+      {"dev": "गुर्भाकोट", "eng": "Gurbhakot"},
+      {"dev": "पञ्चपुरी", "eng": "Panchpuri"},
+      {"dev": "बराहताल", "eng": "Barahatal"},
+      {"dev": "लेकबेँसी", "eng": "Lekbeshi"},
+      {"dev": "चौकुने", "eng": "Chaukune"},
+      {"dev": "सिम्ता", "eng": "Simta"}
+    ]
+  },
+  "बाँके": {
+    "eng": "Banke",
+    "municipalities": [
+      {"dev": "नेपालगञ्ज उपमहानगरपालिका", "eng": "Nepalgunj Sub-Metropolitan City"},
+      {"dev": "कोहलपुर", "eng": "Kohalpur"},
+      {"dev": "राप्ती सोनारी", "eng": "Rapti Sonari"},
+      {"dev": "नरैनापुर", "eng": "Narainapur"},
+      {"dev": "खजुरा", "eng": "Khajura"},
+      {"dev": "बैजनाथ", "eng": "Baijanath"},
+      {"dev": "जानकी", "eng": "Janaki"},
+      {"dev": "डुडुवा", "eng": "Duduwa"}
+    ]
+  }
+}

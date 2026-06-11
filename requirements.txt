@@ -1,0 +1,62 @@
+# # Pillow==10.3.0
+# # opencv-python==4.9.0.80
+# # numpy==1.26.4
+# # faker==24.8.0
+# # tqdm==4.66.4
+# # python-bidi==0.4.2
+# # arabic-reshaper==3.0.0
+
+# # Image processing
+# opencv-python>=4.8.0
+# Pillow>=10.0.0
+# numpy>=1.24.0
+
+# # Synthetic data generation
+# faker>=19.0.0
+
+# # Font rendering (Devanagari unicode support via Pillow+freetype)
+# # Pillow already handles this via FreeType — no extra package needed
+
+# # Model training
+# torch>=2.0.0
+# transformers>=4.35.0
+# datasets>=2.14.0
+# sentencepiece>=0.1.99
+# accelerate>=0.24.0
+
+# # API
+# fastapi>=0.104.0
+# uvicorn>=0.24.0
+# python-multipart>=0.0.6
+
+# # Utilities
+# tqdm>=4.66.0
+# jsonlines>=4.0.0
+
+
+# ─── Image Processing ─────────────────────────────────────────────────────────
+opencv-python>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# ─── Synthetic Data Generation ────────────────────────────────────────────────
+tqdm>=4.66.0
+
+# ─── Model Training (Donut) ───────────────────────────────────────────────────
+torch>=2.0.0
+transformers>=4.35.0
+datasets>=2.14.0
+sentencepiece>=0.1.99
+accelerate>=0.24.0
+
+# ─── Data Utilities ───────────────────────────────────────────────────────────
+jsonlines>=4.0.0
+
+# ─── API Server ───────────────────────────────────────────────────────────────
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+
+
+python-dotenv 
+huggingface_hub

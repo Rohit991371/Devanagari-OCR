@@ -1,0 +1,29 @@
+# Environment
+.env
+.env.example
+venv/
+.venv/
+pyvenv.cfg
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models
+checkpoints/
+model_final/
+
+# Data
+Data/
+processed/
+
+# Logs
+runs/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
