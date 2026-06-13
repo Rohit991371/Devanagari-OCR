@@ -27,6 +27,8 @@ from PIL import Image
 from tqdm import tqdm
 from collections import defaultdict
 from transformers import DonutProcessor, VisionEncoderDecoderModel
+from config import DATA_ROOT, BASE_DIR, ASSETS_DIR
+
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 
@@ -44,11 +46,11 @@ from transformers import DonutProcessor, VisionEncoderDecoderModel
 # BASE PATHS
 # ─────────────────────────────────────────────────────────────
 
-BASE_DIR = Path(__file__).resolve().parent
+# BASE_DIR = Path(__file__).resolve().parent
 
-MODEL_DIR = BASE_DIR / "model_final"
-PROCESSED_DIR = BASE_DIR / "processed"
-RESULTS_DIR = BASE_DIR / "evaluation"
+MODEL_DIR = DATA_ROOT / "model_final"
+PROCESSED_DIR = DATA_ROOT / "processed"
+RESULTS_DIR = DATA_ROOT / "evaluation"
 
 TEST_FILE = PROCESSED_DIR / "test.jsonl"
 

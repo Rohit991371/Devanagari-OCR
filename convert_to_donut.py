@@ -2,10 +2,8 @@ import json
 import os
 from collections import defaultdict
 import re
+from config import DATA_ROOT, BASE_DIR, ASSETS_DIR
 
-# INPUT_JSON = "D:\\Web Dev\\Custome OCR\\CustomOCR\\Data\\Citizenship_old\\Annotations\\old_doc_annotation.json"
-# IMAGE_DIR = "D:\\Web Dev\\Custome OCR\\CustomOCR\\Data\\Citizenship_old\\Docs"
-# OUTPUT_JSONL = "D:\\Web Dev\\Custome OCR\\CustomOCR\\Data\\Citizenship_old\\Annotations\\metadata.jsonl"
 
 from pathlib import Path
 
@@ -13,16 +11,16 @@ from pathlib import Path
 # BASE DIRECTORY
 # =========================================================
 
-try:
-    BASE_DIR = Path(__file__).resolve().parent
-except NameError:
-    BASE_DIR = Path.cwd()
+# try:
+#     BASE_DIR = Path(__file__).resolve().parent
+# except NameError:
+#     BASE_DIR = Path.cwd()
 
 # =========================================================
 # DATA ROOT
 # =========================================================
 
-DATA_DIR = BASE_DIR / "Data"
+# DATA_DIR = BASE_DIR / "Data"
 
 # =========================================================
 # DATASET SELECTION
@@ -40,7 +38,7 @@ DATASET_NAME = "Citizenship_old"
 # PATHS
 # =========================================================
 
-DATASET_DIR = DATA_DIR / DATASET_NAME
+DATASET_DIR = DATA_ROOT / "Storage" / DATASET_NAME
 
 INPUT_JSON = (
     DATASET_DIR
@@ -65,6 +63,7 @@ OUTPUT_JSONL = (
 # =========================================================
 
 print("BASE_DIR:    ", BASE_DIR)
+print("DATA_ROOT:   ", DATA_ROOT)
 print("DATASET:     ", DATASET_NAME)
 print("INPUT_JSON:  ", INPUT_JSON)
 print("IMAGE_DIR:   ", IMAGE_DIR)
@@ -72,7 +71,6 @@ print("OUTPUT_JSONL:", OUTPUT_JSONL)
 
 
 # This script converts the Label Studio JSON annotations into a structured format suitable for training a Donut model.
-
 
 def load_labelstudio_json(path):
     with open(path, "r", encoding="utf-8") as f:

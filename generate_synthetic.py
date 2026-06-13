@@ -26,52 +26,21 @@ import cv2
 from PIL import Image, ImageDraw, ImageFont
 from pathlib import Path
 from tqdm import tqdm
+from config import DATA_ROOT, BASE_DIR, ASSETS_DIR
 
-# ─── CONFIG ───────────────────────────────────────────────────────────────────
-
-# SOURCES = [
-#     {
-#         "name":           "citizenship_new",
-#         "templates_dir":  "Data/Templates/citizenship_new",
-#         "layout_map":     "Data/layout/layout_map_citizenship_new.json",
-#         "output_dir":     "Data/Synthetic/citizenship_new",
-#         "count":          3000,
-#         "doc_type":       "new",
-#         # Fields that are sometimes handwritten on NEW citizenship docs
-#         "hw_fields":      ["officer_name"],
-#         "hw_probability": 0.10,   # 10% of new docs get handwritten officer name
-#     },
-#     {
-#         "name":           "citizenship_old",
-#         "templates_dir":  "Data/Templates/citizenship_old",
-#         "layout_map":     "Data/layout/layout_map_citizenship_old.json",
-#         "output_dir":     "Data/Synthetic/citizenship_old",
-#         "count":          2000,
-#         "doc_type":       "old",
-#         # Fields commonly handwritten on OLD citizenship docs
-#         "hw_fields":      ["name_dev", "father_name", "dob_year_bs", "dob_month_bs",
-#                            "dob_day_bs", "issue_date", "citizenship_number"],
-#         "hw_probability": 0.40,   # 40% of old docs get handwritten fields
-#     },
-# ]
-
-# ASSETS_DIR = "assets"
-# FONTS_DIR = os.path.join(ASSETS_DIR, "fonts")
-# HW_INDEX_PATH = os.path.join(ASSETS_DIR, "handwriting_cache", "index.json")
 
 # ─────────────────────────────────────────────────────────────
 # BASE DIRS
 # ─────────────────────────────────────────────────────────────
 
-BASE_DIR = Path(__file__).resolve().parent
-
-DATA_DIR = BASE_DIR / "Data"
-ASSETS_DIR = BASE_DIR / "assets"
+# BASE_DIR = Path(__file__).resolve().parent
+# ASSETS_DIR = BASE_DIR / "assets"
+# DATA_DIR = BASE_DIR / "Data"
 
 FONTS_DIR = ASSETS_DIR / "fonts"
 
 HW_INDEX_PATH = (
-    ASSETS_DIR /
+    DATA_ROOT /
     "handwriting_cache" /
     "index.json"
 )
@@ -85,14 +54,14 @@ SOURCES = [
         "name": "citizenship_new",
 
         "templates_dir":
-            DATA_DIR / "Templates" / "citizenship_new",
+            DATA_ROOT / "Storage" / "Templates" / "citizenship_new",
 
         "layout_map":
-            DATA_DIR / "layout" /
+            DATA_ROOT / "layout" /
             "layout_map_citizenship_new.json",
 
         "output_dir":
-            DATA_DIR / "Synthetic" / "citizenship_new",
+            DATA_ROOT / "Synthetic" / "citizenship_new",
 
         "count": 3000,
         "doc_type": "new",
@@ -109,14 +78,14 @@ SOURCES = [
         "name": "citizenship_old",
 
         "templates_dir":
-            DATA_DIR / "Templates" / "citizenship_old",
+            DATA_ROOT / "Storage" / "Templates" / "citizenship_old",
 
         "layout_map":
-            DATA_DIR / "layout" /
+            DATA_ROOT / "layout" /
             "layout_map_citizenship_old.json",
 
         "output_dir":
-            DATA_DIR / "Synthetic" / "citizenship_old",
+            DATA_ROOT / "Synthetic" / "citizenship_old",
 
         "count": 2000,
         "doc_type": "old",
@@ -393,7 +362,7 @@ def stamp_text_ttf(pil_img, text, bbox, img_w, img_h):
     """
     Stamp text using TTF font with FIXED alignment.
 
-    Key fix: use anchor="lm" (left-middle) so text is centered vertically
+    Key fix: using anchor="lm" (left-middle) so text is centered vertically
     in the bbox regardless of Devanagari glyph ascenders/descenders.
     Font size is computed PER FIELD based on bbox height.
     """

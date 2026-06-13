@@ -1,8 +1,9 @@
 import subprocess
 import sys
 from pathlib import Path
+from config import DATA_ROOT, BASE_DIR, ASSETS_DIR
 
-BASE_DIR = Path(__file__).resolve().parent
+# BASE_DIR = Path(__file__).resolve().parent
 
 STEPS = {
     "handwriting": "build_handwritten_words.py",

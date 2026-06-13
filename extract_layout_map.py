@@ -18,6 +18,7 @@ import os
 import statistics
 from collections import defaultdict
 from pathlib import Path
+from config import DATA_ROOT, BASE_DIR, ASSETS_DIR
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 
@@ -34,9 +35,9 @@ from pathlib import Path
 #     },
 # ]
 
-BASE_DIR = Path(__file__).resolve().parent
-DATA_DIR = BASE_DIR / "Data"
-LAYOUT_DIR = DATA_DIR / "layout"
+# BASE_DIR = Path(__file__).resolve().parent
+# DATA_DIR = BASE_DIR / "Data"
+LAYOUT_DIR = DATA_ROOT / "Storage" / "layout"
 LAYOUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # ─────────────────────────────────────────────────────────────
@@ -46,12 +47,12 @@ LAYOUT_DIR.mkdir(parents=True, exist_ok=True)
 SOURCES = [
     {
         "name": "citizenship_new",
-        "annotation_file": DATA_DIR / "Citizenship_new" / "Annotations" / "new_doc_annotation.json",
+        "annotation_file": DATA_ROOT / "Storage" / "Citizenship_new" / "Annotations" / "new_doc_annotation.json",
         "output_file": LAYOUT_DIR / "layout_map_citizenship_new.json",
     },
     {
         "name": "citizenship_old",
-        "annotation_file": DATA_DIR / "Citizenship_old" / "Annotations" / "old_doc_annotation.json",
+        "annotation_file": DATA_ROOT / "Storage" / "Citizenship_old" / "Annotations" / "old_doc_annotation.json",
         "output_file": LAYOUT_DIR / "layout_map_citizenship_old.json",
     },
 ]

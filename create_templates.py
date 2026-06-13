@@ -22,6 +22,8 @@ import re
 import cv2
 import numpy as np
 from pathlib import Path
+from config import DATA_ROOT, BASE_DIR, ASSETS_DIR
+
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 
@@ -29,17 +31,17 @@ from pathlib import Path
 # BASE DIRECTORY
 # =========================================================
 
-try:
-    BASE_DIR = Path(__file__).resolve().parent
-except NameError:
-    BASE_DIR = Path.cwd()
+# try:
+#     BASE_DIR = Path(__file__).resolve().parent
+# except NameError:
+#     BASE_DIR = Path.cwd()
 
 # =========================================================
 # ROOT DIRECTORIES
 # =========================================================
 
-DATA_DIR = BASE_DIR / "Data"
-TEMPLATES_DIR = BASE_DIR / "Templates"
+# DATA_DIR = BASE_DIR / "Data"
+TEMPLATES_DIR = DATA_ROOT / "Storage" / "Templates"
 
 # =========================================================
 # DOCUMENT SOURCES
@@ -50,13 +52,15 @@ SOURCES = [
         "name": "citizenship_new",
 
         "annotation_file":
-            DATA_DIR
+            DATA_ROOT
+            / "Storage"
             / "Citizenship_new"
             / "Annotations"
             / "new_doc_annotation.json",
 
         "docs_dir":
-            DATA_DIR
+            DATA_ROOT
+            / "Storage"
             / "Citizenship_new"
             / "Docs",
 
@@ -69,13 +73,15 @@ SOURCES = [
         "name": "citizenship_old",
 
         "annotation_file":
-            DATA_DIR
+            DATA_ROOT
+            / "Storage"
             / "Citizenship_old"
             / "Annotations"
             / "old_doc_annotation.json",
 
         "docs_dir":
-            DATA_DIR
+            DATA_ROOT
+            / "Storage"
             / "Citizenship_old"
             / "Docs",
 

@@ -10,7 +10,7 @@ Strategy:
   - Shuffle with fixed seed for reproducibility
 
 Output:
-  CustomOCR/processed/
+  CustomOCR/Data/processed/
   ├── train.jsonl      image_path + ground_truth
   ├── val.jsonl
   ├── test.jsonl
@@ -25,53 +25,17 @@ import os
 import random
 from pathlib import Path
 from collections import defaultdict
-
-# ─── CONFIG ───────────────────────────────────────────────────────────────────
-
-# SOURCES = [
-#     # Real docs — all go to train
-#     {
-#         "label":         "real_new",
-#         "metadata_file": "Data/Citizenship_new/Annotations/metadata.jsonl",
-#         "image_base":    "Data/Citizenship_new/Docs",
-#         "split":         "train_only",   # never put real docs in val/test
-#         "doc_type":      "citizenship_new",
-#     },
-#     {
-#         "label":         "real_old",
-#         "metadata_file": "Data/Citizenship_old/Annotations/metadata.jsonl",
-#         "image_base":    "Data/Citizenship_old/Docs",
-#         "split":         "train_only",
-#         "doc_type":      "citizenship_old",
-#     },
-#     # Synthetic docs — split 80/10/10
-#     {
-#         "label":         "synth_new",
-#         "metadata_file": "Data/Synthetic/citizenship_new/metadata.jsonl",
-#         "image_base":    "Data/Synthetic/citizenship_new",
-#         "split":         "split",
-#         "doc_type":      "citizenship_new",
-#     },
-#     {
-#         "label":         "synth_old",
-#         "metadata_file": "Data/Synthetic/citizenship_old/metadata.jsonl",
-#         "image_base":    "Data/Synthetic/citizenship_old",
-#         "split":         "split",
-#         "doc_type":      "citizenship_old",
-#     },
-# ]
-
-# OUTPUT_DIR = "processed"
+from config import DATA_ROOT, BASE_DIR, ASSETS_DIR
 
 
 # ─────────────────────────────────────────────────────────────
 # BASE DIRS
 # ─────────────────────────────────────────────────────────────
 
-BASE_DIR = Path(__file__).resolve().parent
+# BASE_DIR = Path(__file__).resolve().parent
 
-DATA_DIR = BASE_DIR / "Data"
-OUTPUT_DIR = BASE_DIR / "processed"
+# DATA_DIR = BASE_DIR / "Data"
+OUTPUT_DIR = DATA_ROOT / "processed"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -89,11 +53,11 @@ SOURCES = [
         "label": "real_new",
 
         "metadata_file":
-            DATA_DIR / "Citizenship_new" /
+            DATA_ROOT / "Storage" / "Citizenship_new" /
             "Annotations" / "metadata.jsonl",
 
         "image_base":
-            DATA_DIR / "Citizenship_new" / "Docs",
+            DATA_ROOT / "Storage" / "Citizenship_new" / "Docs",
 
         "split": "train_only",
 
@@ -104,11 +68,11 @@ SOURCES = [
         "label": "real_old",
 
         "metadata_file":
-            DATA_DIR / "Citizenship_old" /
+            DATA_ROOT / "Storage" / "Citizenship_old" /
             "Annotations" / "metadata.jsonl",
 
         "image_base":
-            DATA_DIR / "Citizenship_old" / "Docs",
+            DATA_ROOT / "Storage" / "Citizenship_old" / "Docs",
 
         "split": "train_only",
 
@@ -121,11 +85,11 @@ SOURCES = [
         "label": "synth_new",
 
         "metadata_file":
-            DATA_DIR / "Synthetic" /
+            DATA_ROOT / "Synthetic" /
             "citizenship_new" / "metadata.jsonl",
 
         "image_base":
-            DATA_DIR / "Synthetic" /
+            DATA_ROOT / "Synthetic" /
             "citizenship_new",
 
         "split": "split",
@@ -137,11 +101,11 @@ SOURCES = [
         "label": "synth_old",
 
         "metadata_file":
-            DATA_DIR / "Synthetic" /
+            DATA_ROOT / "Synthetic" /
             "citizenship_old" / "metadata.jsonl",
 
         "image_base":
-            DATA_DIR / "Synthetic" /
+            DATA_ROOT / "Synthetic" /
             "citizenship_old",
 
         "split": "split",

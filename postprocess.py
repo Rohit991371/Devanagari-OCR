@@ -20,6 +20,7 @@ Run from CustomOCR/ root:
 import re
 import json
 from difflib import SequenceMatcher
+from config import DATA_ROOT, BASE_DIR, ASSETS_DIR
 
 # ─── DIGIT MAPS ───────────────────────────────────────────────────────────────
 

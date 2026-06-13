@@ -28,42 +28,30 @@ import cv2
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 from tqdm import tqdm
+from config import DATA_ROOT, BASE_DIR, ASSETS_DIR
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 
-# DS2_ROOT       = r"assets\handwriting\Handwritten-Devanagari-Characters-Dataset\data"
-# DS2_CONSONANTS = os.path.join(DS2_ROOT, "consonants")
-# DS2_VOWELS     = os.path.join(DS2_ROOT, "vowels")
-# DS2_NUMERALS   = os.path.join(DS2_ROOT, "numerals")
-
-# DS1_IMAGES     = r"assets\handwriting\data_alphabet_text\data_\dataset_200"
-# DS1_LABELS     = r"assets\handwriting\data_alphabet_text\data_\notepad_labels_200.txt"
-
-# FONTS_DIR      = r"assets\fonts"
-# CACHE_DIR      = r"assets\handwriting_cache"
-# WORDS_DIR      = os.path.join(CACHE_DIR, "words")
-# INDEX_PATH     = os.path.join(CACHE_DIR, "index.json")
 from pathlib import Path
 
 # =========================================================
 # BASE DIRECTORY
 # =========================================================
 
-try:
-    BASE_DIR = Path(__file__).resolve().parent
-except NameError:
-    BASE_DIR = Path.cwd()
+# try:
+#     BASE_DIR = Path(__file__).resolve().parent
+# except NameError:
+#     BASE_DIR = Path.cwd()
 
 # =========================================================
 # HANDWRITING DATASETS
 # =========================================================
 
 DS2_ROOT = (
-    BASE_DIR
-    / "assets"
+    ASSETS_DIR
     / "handwriting"
     / "Handwritten-Devanagari-Characters-Dataset"
-    / "data"
+    # / "data"
 )
 
 DS2_CONSONANTS = DS2_ROOT / "consonants"
@@ -75,8 +63,7 @@ DS2_NUMERALS = DS2_ROOT / "numerals"
 # =========================================================
 
 DS1_IMAGES = (
-    BASE_DIR
-    / "assets"
+    ASSETS_DIR
     / "handwriting"
     / "data_alphabet_text"
     / "data_"
@@ -84,8 +71,7 @@ DS1_IMAGES = (
 )
 
 DS1_LABELS = (
-    BASE_DIR
-    / "assets"
+    ASSETS_DIR
     / "handwriting"
     / "data_alphabet_text"
     / "data_"
@@ -96,13 +82,13 @@ DS1_LABELS = (
 # FONTS
 # =========================================================
 
-FONTS_DIR = BASE_DIR / "assets" / "fonts"
+FONTS_DIR = ASSETS_DIR / "fonts"
 
 # =========================================================
 # CACHE
 # =========================================================
 
-CACHE_DIR = BASE_DIR / "assets" / "handwriting_cache"
+CACHE_DIR = DATA_ROOT / "handwriting_cache"
 
 WORDS_DIR = CACHE_DIR / "words"
 
@@ -119,7 +105,8 @@ WORDS_DIR.mkdir(parents=True, exist_ok=True)
 # DEBUG PRINTS (OPTIONAL)
 # =========================================================
 
-print("BASE_DIR:", BASE_DIR)
+print("BASE_DIR:", DATA_ROOT)
+print("ASSETS_DIR:", ASSETS_DIR)
 print("DS2_ROOT:", DS2_ROOT)
 print("WORDS_DIR:", WORDS_DIR)
 

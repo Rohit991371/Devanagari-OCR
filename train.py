@@ -43,6 +43,8 @@ import math
 import re
 import json
 import os
+from config import DATA_ROOT, BASE_DIR, ASSETS_DIR
+
 os.environ["PYTORCH_ALLOC_CONF"] = "expandable_segments:True"
 
 
@@ -62,11 +64,11 @@ else:
 # CHECKPOINT_DIR = "checkpoints"
 # FINAL_MODEL_DIR = "model_final"
 
-BASE_DIR = Path(__file__).resolve().parent
+# BASE_DIR = Path(__file__).resolve().parent
 
-PROCESSED_DIR = BASE_DIR / "processed"
-CHECKPOINT_DIR = BASE_DIR / "checkpoints"
-FINAL_MODEL_DIR = BASE_DIR / "model_final"
+PROCESSED_DIR = DATA_ROOT / "processed"
+CHECKPOINT_DIR = DATA_ROOT / "checkpoints"
+FINAL_MODEL_DIR = DATA_ROOT / "model_final"
 
 # Create dirs automatically
 CHECKPOINT_DIR.mkdir(parents=True, exist_ok=True)
@@ -382,7 +384,7 @@ def train_phase(model, processor, phase_config, device):
     train_path = os.path.join(PROCESSED_DIR, "train.jsonl")
     val_path = os.path.join(PROCESSED_DIR, "val.jsonl")
 
-    # 512 tokens × batch_size × decoder layers = significant memory. For your field count (29 fields), the actual XML is typically 200–300 tokens.
+    # 512 tokens × batch_size × decoder layers = significant memory. For field count (29 fields), the actual XML is typically 200–300 tokens.
     train_ds = CitizenshipDataset(
         train_path, processor, source_filter=filt, max_length=384)
 
