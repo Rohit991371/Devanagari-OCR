@@ -85,11 +85,11 @@ SOURCES = [
         "label": "synth_new",
 
         "metadata_file":
-            DATA_ROOT / "Synthetic" /
+            DATA_ROOT / "Storage" / "Synthetic" /
             "citizenship_new" / "metadata.jsonl",
 
         "image_base":
-            DATA_ROOT / "Synthetic" /
+            DATA_ROOT / "Storage" / "Synthetic" /
             "citizenship_new",
 
         "split": "split",
@@ -101,7 +101,7 @@ SOURCES = [
         "label": "synth_old",
 
         "metadata_file":
-            DATA_ROOT / "Synthetic" /
+            DATA_ROOT / "Storage" / "Synthetic" /
             "citizenship_old" / "metadata.jsonl",
 
         "image_base":
