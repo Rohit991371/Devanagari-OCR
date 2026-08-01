@@ -248,4 +248,4 @@ size 1 + gradient checkpointing; CPU training will take days). Set
 - [ ] Align `evaluate.py`'s tag parsing with `postprocess.py`'s convention
 - [ ] Re-run training and confirm loss/metrics behave sanely
 - [ ] Build an actual FastAPI app in `api.py` (`/extract`, `/extract/batch`, `/health`)
-- [ ] Extend to Nepali passports, PAN card, voter ID
+- [ ] Extend to Nepali passports, PAN card, voter ID(Future Plan)
